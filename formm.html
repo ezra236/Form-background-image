@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form with Background Image</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; 
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.9); 
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px; 
+      max-width: 80%; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      background-image: url('7568634ffa09fe3ed5a02fe0cf0356d8.jpg'); /* Background image inside the form */
+      background-size: cover; /* Cover the entire form */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for labels */
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+      width: calc(100% - 20px); 
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for inputs */
+    }
+
+    form button {
+      background-color: #007bff; 
+      color: white; 
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #0056b3;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form action="#" method="POST">
+      <!-- Form fields go here -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
